@@ -20,4 +20,4 @@ cloning this repository by running
 git clone https://github.com/canozcivelek/traffic-sign-recognition.git
 ```
 on the command prompt, the project is pretty much ready to go. If desired to run this project on Google Colab, make sure to have a Google 
-account. Then by simply navigating to [www.colab.research.google.com], upload the project and run all the cells. More notes on  how the code works are provided in the next section.
+account. Then by simply navigating to www.colab.research.google.com, upload the project and run all the cells. More notes on  how the code works are provided in the next section.

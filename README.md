@@ -8,6 +8,8 @@ any sign and can take actions ranging from a warning on the instrument cluster, 
 automatically slowing down to make sure current speed isn't above limit. To make sign recognition possible, some machine learning methods 
 are applied to train a model that can perform this recognition.
 
+![](https://imgur.com/7m8id4n.gif)
+
 ## Running the Project
 This project was developed using Google Colab. Colab offers a flexible environment to develop projects where they are synchronized 
 with user's Google acount and safely uploaded to Google Drive. However, perhaps the best offer is that it allows users to benefit from 

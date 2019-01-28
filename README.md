@@ -83,7 +83,7 @@ After defining the model, it's time for training to take place. The model is tra
 _Accuracy graph (left) and Loss graph (right)._
 
 ### Trying Out the Model
-Finally, from a URL, a traffic sign is tried to see if the model predicts it correctly. The output is given as the predicted sign label which are defined in the signnames.csv file. Below is an image of the model provided with a "Maximum Speed 30kmh" sign and its prediction can be confirmed from signnames.csv which holds the lable 1 for 30kmh speed limit which is exactly what the model predicted.
+Finally, from a URL, a traffic sign is tried to see if the model predicts correctly. The output is given as the predicted sign label which are defined in the _signnames.csv_ file. Below is an image of the model provided with a "Speed Limit 30kmh" sign and its prediction can be confirmed from _signnames.csv_ which holds the label **"1"** for 30kmh speed limit which is exactly what the model predicted.
 
 ![alt text](https://github.com/canozcivelek/traffic-sign-recognition/blob/master/Images/predict.jpg)
 ---

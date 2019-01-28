@@ -28,6 +28,7 @@ After launching the notebook on Colab or Jupyter, the first cell clones the nece
 Upon inspection, it is understood that all the traffic sign images have a dimension of 32x32 and 3 channels of color. However, to be able to train the model, it is needed to preprocess the images in such a way that it is easier for the training part and doesn't take too much time. signnames.csv file contains all 43 signs and their corresponding labels. For instance, "Speed Limit 50km/h" sign has number "2" as its label, or "No Entry" sign has the label "17". By plotting the number of samples, it is seen how much data is provided for each traffic sign.
 
 ![alt text](https://github.com/canozcivelek/traffic-sign-recognition/blob/master/Images/trainDataset.png)
+
 _Graph of train dataset._
 
 ### Preprocessing Images
@@ -38,6 +39,7 @@ As mentioned earlier, a preprocessing is required to prepare the dataset for tra
 These steps are performed under the function preprocess() and prepares the images for training.
 
 ![alt text](https://github.com/canozcivelek/traffic-sign-recognition/blob/master/Images/imageSamples.jpg)
+
 _The raw image (left), and the preprocessed image (right)._
 
 ### Data Augmentation
@@ -47,6 +49,7 @@ It is possible to augment the dataset by making a few modifications on each imag
 The LeNet model is used to perform training. This model is proved to be an efficient model and provides high rates of accuracy. Here's a visualization of the LeNet model.
 
 ![alt text](https://github.com/canozcivelek/traffic-sign-recognition/blob/master/Images/leNet.jpg)
+---
 
 **Adding the Convolutional Layers**
 
@@ -69,12 +72,14 @@ A dropout layer is added to make some of the input nodes dropped. a 0.5 rate of 
 By adding a flatten layer, the data is formatted properly to be fed into the fully connected layer as a one dimensional array. Next, by declaring a dense layer, all the nodes in the subsequent layer is connected to every node in the preceding layer.
 
 ![alt text](https://github.com/canozcivelek/traffic-sign-recognition/blob/master/Images/modelSummary.png)
+
 _Summary of the model._
 
 ### Training & Analyzing
 After defining the model, it's time for training to take place. The model is trained in 2000 steps per each epoch, and epoch size is defined to be 10. This is where Google Colab's hardware accelerator really makes a difference as it significantly reduces the time it takes to complete training. When training is complete, some visualization is done by plotting the "Loss" and "Accuracy" functions of the training. Analyzing these functions is important to make sense of how the training went. One can make adjustments on the model if these graphs show signs of overfitting, underfitting etc. It is seen here that test accuracy is over 97% which is good enough for the purposes of this project.
 
 ![alt text](https://github.com/canozcivelek/traffic-sign-recognition/blob/master/Images/graphs.jpg)
+
 _Accuracy graph (left) and Loss graph (right)._
 
 ### Trying Out the Model

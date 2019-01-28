@@ -24,7 +24,7 @@ on the command prompt, the project is pretty much ready to go. If desired to run
 #### Acquiring the Dataset
 After launching the notebook on Colab or Jupyter, the first cell clones the necessary resources of all the traffic signs and their labels from a github repo. This is followed by importing the libraries such as numpy, matplotlib and keras. Next, data are loaded to make possible working with them and analyze them. 
 
-#### Analyzing the Datset
+#### Analyzing the Dataset
 Upon inspection, it is understood that all the traffic sign images have a dimension of 32x32 and 3 channels of color. However, to be able to train the model, it is needed to preprocess the images in such a way that it is easier for the training part and doesn't take too much time. signnames.csv file contains all 43 signs and their corresponding labels. For instance, "Speed Limit 50km/h" sign has number "2" as its label, or "No Entry" sign has the label "17". By plotting the number of samples, it is seen how much data is provided for each traffic sign.
 
 #### Preprocessing Images
@@ -38,20 +38,26 @@ These steps are performed under the function preprocess() and prepares the image
 It is possible to augment the dataset by making a few modifications on each image. This will help generating more images to train, thus, more accurate learning rates will be achieved. Using keras.preprocessing.image library, ImageDataGenerator is imported and this library will enable data augmentation by shifting images, zooming in/out, shearing rotating them randomly.
 
 #### The LeNet Model
-The LeNet model is used to perform training. This model is proved to be an efficient model and provides high rates of accuracy. 
+The LeNet model is used to perform training. This model is proved to be an efficient model and provides high rates of accuracy.
+
 **Adding the Convolutional Layers**
+
 In this _sequential_ model, it is first added 2 convolutional 2D layers each consisting of 60 filters which are responsible for extracting features out of the training images. These features have an essential role in **predicting** what a sign looks like and correctly classifying them. They have a 5x5 dimension that will scan through each image which are reduced to 28x28 in dimension. The next parameter defines the input image shape which were defined earlier as 32x32x1. Lastly, the layers are activated using "relu" activation function. 
 
 **Adding a Pooling Layer**
+
 As per the LeNet model architecture, a pooling layer is added to reduce the feature map dimensions from 5x5 to 2x2. Basically, this will prevent overfitting by having more generalized versions of previously extracted features and provide less parameters to work with.
 
 **Further Convolutional Layers**
+
 2 more convolutional 2d layers are added, this time, having 30 filters each with dimensions of 3x3. They are again followed by a pooling layer with a pooling size of 2x2.
 
 **Dropout Layers**
+
 A dropout layer is added to make some of the input nodes dropped. a 0.5 rate of dropout means at each update, half of the input nodes will be dropped. Which will speed up the process and not have a drastic effect on learning.
 
 **Flatten & Dense Layers**
+
 By adding a flatten layer, the data is formatted properly to be fed into the fully connected layer as a one dimensional array. Next, by declaring a dense layer, all the nodes in the subsequent layer is connected to every node in the preceding layer.
 
 #### Training & Analyzing

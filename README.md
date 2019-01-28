@@ -83,7 +83,10 @@ After defining the model, it's time for training to take place. The model is tra
 _Accuracy graph (left) and Loss graph (right)._
 
 ### Trying Out the Model
-Finally, from a URL, a traffic sign is tried to see if the model predicts the sign correctly. The output is given as the predicted sign label which are defined in the signnames.csv file.
+Finally, from a URL, a traffic sign is tried to see if the model predicts it correctly. The output is given as the predicted sign label which are defined in the signnames.csv file. Below is an image of the model provided with a "Maximum Speed 30kmh" sign and its prediction can be confirmed from signnames.csv which holds the lable 1 for 30kmh speed limit which is exactly what the model predicted.
+
+![alt text](https://github.com/canozcivelek/traffic-sign-recognition/blob/master/Images/predict.jpg)
+---
 
 ## Important Notes
 It should be noted that this project was done for educational and self-improvement purposes and is a simple demonstration of how machine learning methods can be applied efficiently to identify traffic signs. Machine learning can be very powerful and efficient when it comes to detecting and classifying objects. This project can be improved greatly and more visually enhanced, however, in its current state, it is found to be sufficient to show the system in action.

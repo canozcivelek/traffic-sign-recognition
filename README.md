@@ -25,7 +25,7 @@ on the command prompt, the project is pretty much ready to go. If desired to run
 After launching the notebook on Colab or Jupyter, the first cell clones the necessary resources of all the traffic signs and their labels from a github repo. This is followed by importing the libraries such as numpy, matplotlib and keras. Next, data are loaded to make possible working with them and analyze them. 
 
 ### Analyzing the Dataset
-Upon inspection, it is understood that all the traffic sign images have a dimension of 32x32 and 3 channels of color. However, to be able to train the model, it is needed to preprocess the images in such a way that it is easier for the training part and doesn't take too much time. signnames.csv file contains all 43 signs and their corresponding labels. For instance, "Speed Limit 50km/h" sign has number "2" as its label, or "No Entry" sign has the label "17". By plotting the number of samples, it is seen how much data is provided for each traffic sign.
+Upon inspection, it is understood that all the traffic sign images have a dimension of 32x32 and 3 channels of color. However, to be able to train the model, it is needed to preprocess the images in such a way that it is easier for the training part and doesn't take too much time. [signnames.csv](signnames.csv) file contains all 43 signs and their corresponding labels. For instance, "Speed Limit 50km/h" sign has number "2" as its label, or "No Entry" sign has the label "17". By plotting the number of samples, it is seen how much data is provided for each traffic sign.
 
 ![alt text](https://github.com/canozcivelek/traffic-sign-recognition/blob/master/Images/trainDataset.png)
 
@@ -83,7 +83,7 @@ After defining the model, it's time for training to take place. The model is tra
 _Accuracy graph (left) and Loss graph (right)._
 
 ### Trying Out the Model
-Finally, from a URL, a traffic sign is tried to see if the model predicts correctly. The output is given as the predicted sign label which are defined in the _signnames.csv_ file. Below is an image of the model provided with a "Speed Limit 30kmh" sign and its prediction can be confirmed from _signnames.csv_ which holds the label **"1"** for 30kmh speed limit which is exactly what the model predicted.
+Finally, from a URL, a traffic sign is tried to see if the model predicts correctly. The output is given as the predicted sign label which are defined in the [signnames.csv](signnames.csv) file. Below is an image of the model provided with a "Speed Limit 30kmh" sign and its prediction can be confirmed from _signnames.csv_ which holds the label **"1"** for 30kmh speed limit which is exactly what the model predicted.
 
 ![alt text](https://github.com/canozcivelek/traffic-sign-recognition/blob/master/Images/predict.jpg)
 ---

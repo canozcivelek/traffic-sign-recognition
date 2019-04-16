@@ -64,7 +64,7 @@ As per the LeNet model architecture, a pooling layer is added to reduce the feat
 
 **Dropout Layers**
 
-A dropout layer is added to make some of the input nodes dropped. a 0.5 rate of dropout means at each update, half of the input nodes will be dropped. Which will speed up the process and not have a drastic effect on learning.
+A dropout layer is added to make some of the input nodes dropped. A 0.5 rate of dropout means at each update, half of the input nodes will be dropped. Which will speed up the process and not have a drastic effect on learning.
 
 **Flatten & Dense Layers**
 
